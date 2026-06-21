@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Father's Day ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- MUSIC -->
+    <!-- ========================= -->
+
+    <audio id="bgMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Items -->
+
+    <div id="floatingContainer"></div>
+
+    <!-- Cursor Hearts -->
+
+    <div id="cursorContainer"></div>
+
+    <!-- ========================= -->
+    <!-- START SCREEN -->
+    <!-- ========================= -->
+
+    <section id="startScreen">
+
+        <div class="characters">
+
+            <!-- YOU -->
+
+            <img src="me.jpg" class="character me">
+
+            <div class="introContent">
+
+                <h1 class="mainTitle">
+
+                    Happy Father's Day ❤️
+
+                </h1>
+
+                <p class="subtitle">
+
+                    I made something special for you...
+
+                </p>
+
+                <button id="giftBtn">
+
+                    🎁 Open Your Gift
+
+                </button>
+
+            </div>
+
+            <!-- DAD -->
+
+            <img src="appa.jpg" class="character appa">
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LETTER -->
+    <!-- ========================= -->
+
+    <section id="letterScreen" class="hidden">
+
+        <h2 class="envelopeTitle">
+
+            A Letter For My Appa ❤️
+
+        </h2>
+
+        <div class="envelopeWrapper">
+
+            <div id="envelope" class="envelope">
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-body"></div>
+
+                <div id="letter" class="letter">
+
+                    <div class="letterContent">
+
+                        <h1>
+
+                            Dear Appa ❤️
+
+                        </h1>
+
+                        <div id="typedText"></div>
+
+                        <div class="signature">
+
+                            — Love, Taarun ❤️
+
+                        </div>
+
+                        <button id="memoryBtn">
+
+                            📸 Relive Our Memories
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- PHOTO MEMORIES -->
+    <!-- ========================= -->
+
+    <section id="memoryScreen" class="hidden">
+
+        <h1 class="memoryTitle">
+
+            📸 Our Beautiful Memories ❤️
+
+        </h1>
+
+        <div class="memoryContainer">
+
+            <div class="memoryCard">
+                <img src="photos/1.jpg">
+                <p>Every journey with you became a beautiful memory ❤️</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/2.jpg">
+                <p>My first hero, my forever inspiration.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/3.jpg">
+                <p>Thank you for always believing in me.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/4.jpg">
+                <p>Every smile with you is priceless.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/5.jpg">
+                <p>Every adventure felt safe because you were there.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/6.jpg">
+                <p>Thank you for every sacrifice you made.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/7.jpg">
+                <p>One of my favourite memories ❤️</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/8.jpg">
+                <p>You've always been my biggest supporter.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/9.jpg">
+                <p>Every celebration became special because of you.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/10.jpg">
+                <p>Thank you for teaching me life's greatest lessons.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/11.jpg">
+                <p>I hope to make you proud every day.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/12.jpg">
+                <p>Every moment with you is a blessing.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/13.jpg">
+                <p>I'll always look up to you.</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/14.jpg">
+                <p>Thank you for everything, Appa ❤️</p>
+            </div>
+
+            <div class="memoryCard">
+                <img src="photos/15.jpg">
+                <p>Forever your little boy ❤️</p>
+            </div>
+
+        </div>
+
+        <button id="finishBtn">
+
+            ❤️ One Last Message
+
+        </button>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FINAL MESSAGE -->
+    <!-- ========================= -->
+
+    <div id="finalMessage" class="hidden">
+
+        <div class="finalCard">
+
+            <h1>❤️</h1>
+
+            <h2>
+
+                Love You Appa ❤️
+
+            </h2>
+
+            <p>
+
+                No matter how old I grow,
+
+                I'll always be your little boy.
+
+            </p>
+
+            <p class="smallText">
+
+                Happy Father's Day ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- LETTER CONTENT -->
+    <!-- ========================= -->
+
+    <script>
+
+const letterText = `
+
+Dear Appa,
+
+Happy Father's Day ❤️
+
+Thank you for every sacrifice.
+
+Thank you for every lesson.
+
+Thank you for believing in me.
+
+Everything I am today is because of you.
+
+Every achievement of mine
+has your fingerprints on it.
+
+I hope one day
+I can make you as proud
+as you've always made me feel.
+
+I love you so much.
+
+Happy Father's Day ❤️
+
+Love,
+
+Taarun ❤️
+
+`;
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
